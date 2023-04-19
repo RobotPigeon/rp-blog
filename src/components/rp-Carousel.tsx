@@ -65,10 +65,10 @@ const RpCarousel: React.FC<CarouselProps> = ({ images, width, height, autoPlay =
                 />
             ))}
             <button className="btn  bg-primary absolute bottom-1/2 left-0 flex" disabled={currentIndex === 0} onClick={handlePreviousClick}>
-                <svg t="1681813546863" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3230" width="20" height="20"><path d="M658.29178 1003.504117l223.006914 0L398.119373 520.342595 881.298746 0 658.291782 0 175.112507 520.342595 658.29178 1003.504117z" p-id="3231"></path></svg>
+                <svg  className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3230" width="20" height="20"><path d="M658.29178 1003.504117l223.006914 0L398.119373 520.342595 881.298746 0 658.291782 0 175.112507 520.342595 658.29178 1003.504117z" p-id="3231"></path></svg>
             </button>
             <button className="btn  bg-primary absolute bottom-1/2 right-0 flex" disabled={currentIndex === images.length - 1} onClick={handleNextClick}>
-                <svg t="1681813524182" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3090" width="20" height="20"><path d="M881.298746 520.342595 398.119373 0 175.112486 0 658.29178 520.342595 175.112507 1003.504117l223.006914 0L881.298746 520.342595z" p-id="3091"></path></svg>
+                <svg  className="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3090" width="20" height="20"><path d="M881.298746 520.342595 398.119373 0 175.112486 0 658.29178 520.342595 175.112507 1003.504117l223.006914 0L881.298746 520.342595z" p-id="3091"></path></svg>
             </button>
         </div>
     );

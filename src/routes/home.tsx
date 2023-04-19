@@ -1,6 +1,7 @@
 import React from "react"
 import Greeter from "../components/greeter"
 import Carousel from "../components/rp-Carousel"
+import ThemeSwitcher from "../components/themechange"
 
 export default function Home() {
   //声明images
@@ -23,6 +24,7 @@ export default function Home() {
       </button>
       <input type="range" min="0" max="100" className="range" />
       <Greeter name="developer" />
+      <ThemeSwitcher themes={["cupcake", "dracula","dark","light"]} initialThemeIndex={0}/>
 
     </div>
   )

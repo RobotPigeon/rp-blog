@@ -7,7 +7,7 @@ export default function Layout() {
   let location = useLocation()
 
   // this component is used to highlight the current page in the menu
-  let LinkWithStyle = (props: {to: string, children: JSX.Element | JSX.Element[] | string}) => {
+  let LinkWithStyle = (props: { to: string, children: JSX.Element | JSX.Element[] | string }) => {
     let style = location.pathname === props.to ? "bg-accent text-accent-content" : ""
 
     return (
@@ -59,7 +59,7 @@ export default function Layout() {
               {menu("vertical")}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">PWA 😎</a>
+          <a className="btn btn-ghost normal-case text-xl">RP-BLOG😎</a>
           {/* desktop menu */}
           <ul className="menu menu-horizontal px-1 hidden lg:flex z-10">{menu("horizontal")}</ul>
         </section>
